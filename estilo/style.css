@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* fonte pimporta do "google fonts"*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Passion One', cursive;
+    --font3:'Sriracha', cursive;  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    min-height: 100vh;
+    background-color:darkgrey;
+    font-family: var(--font1);
+    
+
+}
+header{
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+/*para transforma todo o tex em letras maiúsculas
+    (text-transform: uppercase;. e font-variant: small-caps; para destacar a primeira letra da palavra em letras maiúsculas */
+header> h1{
+    padding-top: 50px;   
+    font-variant:small-caps;
+    font-family: var(--font2);
+    font-size:5vw;
+}
+header > p {
+    padding: 50px;
+}
+
+ header a, footer a {
+    color: white;
+   text-decoration: none;
+    font-weight: bolder;
+}
+
+ header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh ;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 2vw;
+}
+section >p{
+    /*Dando um espaço entre os parágrafos*/
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color:black;
+}
+
+section.imagem {
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.779);
+    background-size: cover; 
+    background-attachment: fixed;
+}
+section#img01 {
+    background-image:url( '../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+section.imagem > p {
+  
+    /* subistituir o width: 400px; por display: inline-box, acrescentando um padding: 5px. Para criar uma caixa que acompanha o tamanho da tela*/ 
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
